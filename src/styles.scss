@@ -21,3 +21,10 @@ body {
     width: 375px;
   }
 }
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
