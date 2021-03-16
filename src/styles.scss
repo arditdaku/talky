@@ -1,6 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-$primary-color: #377dff;
-$background: #e5e5e5;
-$available-color: #2dca8c;
-$white: #ffff;
-$black-color: #243443;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+:root {
+  --primary-color: #377dff;
+  --background: #f7f7f9;
+  --available-color: #2dca8c;
+  --white: #ffff;
+  --black-color: #243443;
+}
+* {
+  font-family: Inter;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > main {
+    height: 812px;
+    width: 375px;
+  }
+}
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
